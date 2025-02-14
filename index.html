@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Shopping List Manager</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header><h1>Shopping List Manager</h1></header>
+
+    <!-- Main Container -->
+    <div class="mainContainer">
+      <!-- Item Input -->
+      <div class="item-container">
+        <div class="item-input-container">
+          <input type="text" id="itemInput" placeholder="Enter item name" />
+          <button id="addItemBtn"><span>Add</span></button>
+        </div>
+      </div>
+      <!-- Item List -->
+      <div class="item-container">
+        <div class="item-list-container">
+          <div class="item-list">
+            <ul id="itemList">
+              <!-- Items will be added here -->
+            </ul>
+          </div>
+          <div class="item-list-footer">
+            <button id="clearAll">Clear All Items</button>
+            <span id="itemCounter">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

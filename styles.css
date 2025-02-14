@@ -1,0 +1,199 @@
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f5f7fa;
+}
+
+body {
+    line-height: 1.6;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Header Styles */
+header {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #2d3748;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Main Container */
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    min-height: calc(100vh - 80px);
+}
+
+/* Item Containers */
+.item-container {
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+/* Input Styles */
+.item-input-container {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+#itemInput {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+#itemInput:focus {
+    outline: none;
+    border-color: #4299e1;
+}
+
+#addItemBtn {
+    padding: 0.75rem 1.5rem;
+    background-color: #5bc6c8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#addItemBtn:hover {
+    background-color: #51b0b2;
+}
+
+/* Item List Styles */
+.item-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.item-list {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    gap: 0.75rem;
+}
+
+#itemList {
+    flex: 1;
+    color: #4a5568;
+}
+
+/* Update the item list styles */
+#itemList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+/* Footer Styles */
+.item-list-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+#clearAll {
+    padding: 0.5rem 1rem;
+    background-color: #edf2f7;
+    color: #4a5568;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#clearAll:hover {
+    background-color: #e2e8f0;
+}
+
+#itemCounter {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+
+/* Button Styles */
+.edit-btn, .delete-btn {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+
+.edit-btn {
+    background-color: #ebf8ff;
+    color: #4299e1;
+}
+
+.delete-btn {
+    background-color: #fff5f5;
+    color: #f56565;
+}
+
+.edit-btn:hover {
+    background-color: #bee3f8;
+}
+
+.delete-btn:hover {
+    background-color: #fed7d7;
+}
